@@ -1,0 +1,69 @@
+<div class="projects">
+    <div class="headline">
+        <h1>My Works</h1>
+        <div class="links">
+            <button class="link" (click)="clickAll()" [class.red]="all">All</button>
+            <button class="link" (click)="clickJs()" [class.red]="js">Javascript</button>
+            <button class="link" (click)="clickNg()" [class.red]="ng">Angular</button>
+        </div>
+    </div>
+    <!-- <div class="project-list">
+        <div class="card zoom" *ngFor="let project of projects; let i=index" style="width: 22rem;">
+            <img src="assets/img/{{projectsImages[i]}}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p>{{project}}</p>
+            </div>
+            <a href="{{links[i]}}">Try Project</a>
+        </div>
+    </div> -->
+    <div class="pro-div">
+        <div class="projects-round" *ngIf="all">
+            <div class="card" *ngFor="let allProject of allProjects; let i=index">
+                <div class="image">
+                    <img src="assets/img/{{allImages[i]}}" />
+                </div>
+                <div class="details">
+                    <div class="center">
+                        <h1>{{allProject[i]}}</h1>
+                        <p>{{allTechs[i]}}</p>
+                        <ul>
+                            <li><a href="#">Try Project</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="projects-round" *ngIf="js">
+            <div class="card" *ngFor="let jsProject of jsProjects; let i=index">
+                <div class="image">
+                    <img src="assets/img/{{jsImages[i]}}" />
+                </div>
+                <div class="details">
+                    <div class="center">
+                        <h1>{{jsProject[i]}}</h1>
+                        <p>{{allTechs[i]}}</p>
+                        <ul>
+                            <li><a href="#">Try Project</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="projects-round" *ngIf="ng">
+            <div class="card" *ngFor="let ngProject of ngProjects; let i=index">
+                <div class="image">
+                    <img src="assets/img/{{ngImages[i]}}" />
+                </div>
+                <div class="details">
+                    <div class="center">
+                        <h1>{{ngProjects[i]}}</h1>
+                        <p>{{ngTechs[i]}}</p>
+                        <ul>
+                            <li><a href="#">Try Project</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

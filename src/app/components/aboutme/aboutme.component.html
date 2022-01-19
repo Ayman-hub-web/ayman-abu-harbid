@@ -1,0 +1,28 @@
+<div class="cv-round">
+    <div class="container-div">
+        <div class="left">
+            <img src="assets/img/ayman2.jpg" alt="">
+        </div>
+        <div class="right">
+            <h1>About me</h1>
+            <p>"My name is Ayman Abu Harbid. I studied Computer Science at the University of Paderborn."</p>
+        </div>
+    </div>
+    <div class="line-throw">
+
+    </div>
+    <div class="hoppies">
+        <div class="card-around" *ngFor="let image of images; let i=index">
+            <div class="card" style="width: 18rem;">
+                <div class="img-circle">
+                    <img src="assets/img/{{images[i]}}" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <p class="card-text">{{headlines[i]}}</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

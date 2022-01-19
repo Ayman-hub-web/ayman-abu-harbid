@@ -1,0 +1,25 @@
+<header>
+    <div class="logo-menu">
+        <img routerLink="/" src="assets/img/ayman.png" routerLink="/">
+        <img src="https://img.icons8.com/ios/50/000000/menu--v1.png" [class.d-none]="!responsive" (click)="toggle()" />
+        <!-- <img src="assets/img/menu2.png" alt="" [class.d-none]="!responsive" (click)="toggle()"> -->
+        <!-- <img alt="svgImg" [class.d-none]="!responsive" (click)="toggle()" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iNTAiIGhlaWdodD0iNTAiCnZpZXdCb3g9IjAgMCA1MCA1MCIKc3R5bGU9IiBmaWxsOiMwMDAwMDA7Ij48cGF0aCBkPSJNIDUgOSBMIDUgMTEgTCA0NSAxMSBMIDQ1IDkgTCA1IDkgeiBNIDUgMjQgTCA1IDI2IEwgNDUgMjYgTCA0NSAyNCBMIDUgMjQgeiBNIDUgMzkgTCA1IDQxIEwgNDUgNDEgTCA0NSAzOSBMIDUgMzkgeiI+PC9wYXRoPjwvc3ZnPg==" -->
+        <img [class.d-none]="responsive" src="https://img.icons8.com/fluency-systems-regular/48/000000/x.png" (click)="toggle()" />
+    </div>
+    <div [class.d-none]="responsive" [class.flex]="responsive" class="menu">
+        <ul>
+            <li><a routerLink="/">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">My Works</a></li>
+            <li><a href="#aboutme" target="projects">About me</a></li>
+            <li><a href="#contact" target="projects">Contact me</a></li>
+        </ul>
+    </div>
+    <div class="menu-normal">
+        <a routerLink="/" style="color:#FA2759">Home</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">My Works</a>
+        <a href="#aboutme">About me</a>
+        <a href="#contact">Contact me</a>
+    </div>
+</header>

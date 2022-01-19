@@ -1,0 +1,27 @@
+<div class="form-around">
+    <div class="headline">
+        <h1>Contact me.</h1>
+        <span>Get in touch via the form below, or by emailing: <small>aymanab1971@gmail.com</small></span>
+    </div>
+    <!-- <button [class.d-none]="!open" class="btn btn-primary" (click)="openContact()">Dispaly Contact Form</button> -->
+    <!-- <div class="form-div" [class.d-none]="open"> -->
+    <div class="form-div">
+        <form action="http://ayman-abu-harbid.developerakademie.net/Kontaktformular/send_mail.php" method="post">
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Name</label>
+                <input STYLE="color: #FFFFFF; font-family: Verdana; font-weight: bold; font-size: 12px; background-color: rgb(71, 68, 68);" type="text" name="name" id="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input STYLE="color: #FFFFFF; font-family: Verdana; font-weight: bold; font-size: 12px; background-color: rgb(71, 68, 68);" type="text" name="name" id="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Message</label>
+                <textarea STYLE="color: #FFFFFF; font-family: Verdana; font-weight: bold; font-size: 12px; background-color: rgb(71, 68, 68);" type="text" name="message" id="message" class="form-control" id="exampleInputPassword1"></textarea>
+            </div>
+            <div class="btn">
+                <button type="submit" class="btn btn-dark">Send Mail</button>
+            </div>
+        </form>
+    </div>
+</div>

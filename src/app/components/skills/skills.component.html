@@ -1,0 +1,15 @@
+<div class="round-skills">
+    <div class="headline">
+        <h1>Skills</h1>
+    </div>
+    <div class="skills">
+        <div class="card" *ngFor="let skill of skills; let i=index">
+            <div class="around-img">
+                <img src="assets/img/{{skillsImages[i]}}" class="anime">
+            </div>
+            <div class="card-body">
+                <p>{{skill}}</p>
+            </div>
+        </div>
+    </div>
+</div>

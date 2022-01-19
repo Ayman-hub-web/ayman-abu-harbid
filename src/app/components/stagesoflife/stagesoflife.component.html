@@ -1,0 +1,15 @@
+<div class="stages-around">
+    <div class="headline">
+        <h1>previous jobs
+        </h1>
+    </div>
+    <div class="stages">
+        <div class="card" *ngFor="let stage of stages; let i=index" style="width: 20rem;">
+            <img src="assets/img/{{stagesImages[i]}}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p>{{stage}}</p>
+            </div>
+            <a href="{{links[i]}}">Go to Entrepreneur</a>
+        </div>
+    </div>
+</div>
