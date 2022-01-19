@@ -18,20 +18,26 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
     <script>
-        $(document).ready(function() {
-            $(window).scrollTop(0);
-        });
+        // $(document).ready(function() {
+        //     $(window).scrollTop(0);
+        // });
 
-        function getYPosition() {
-            var top = window.pageYOffset || document.documentElement.scrollTop
-            console.log("Position", top);
-        }
+        // function getYPosition() {
+        //     var top = window.pageYOffset || document.documentElement.scrollTop
+        //     console.log("Position", top);
+        // }
 
-        function reloadByPosition() {
-            if (document.body.ScrollTop === 5891.2001953125) {
-                document.location.reload(true);
-            }
-        }
+        // function reloadByPosition() {
+        //     if (document.body.ScrollTop === 5891.2001953125) {
+        //         document.location.reload(true);
+        //     }
+        // }
+        // $(window).on('beforeunload', function() {
+        //     $(window).scrollTop(-10);
+        // });
+        window.onbeforeunload = function() {
+            window.scrollTo(0, 0);
+        };
     </script>
 </body>
 
